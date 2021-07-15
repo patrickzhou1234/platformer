@@ -1,0 +1,97 @@
+html {
+  background-color: lightblue;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none; 
+  -webkit-user-drag: none;
+}
+
+progress {
+  position: absolute;
+}
+
+div {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none; 
+  -webkit-user-drag: none;
+}
+
+html {
+  overflow: hidden;
+}
+
+#playerhealth {
+  top: 25vh;
+  left: 0vw;
+  width: 20vh;
+}
+
+#character {
+  position: absolute;
+  left: 0vh;
+  top: 30vh;
+  width: 20vh;
+  height: 20vh;
+}
+
+#ground1 {
+  position: absolute;
+  left: 0px;
+  top: 49.5vh;
+  border-left: 100vw solid rgb(0, 255, 157);
+  height: 1vh;
+}
+
+#gun {
+  cursor: default;
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  left: 20vh;
+  top: 36vh;
+}
+
+#bullet {
+  width: 5vh;
+  height: 5vh;
+  display: none;
+  position: absolute;
+}
+
+.jump {
+  animation: jump 0.5s linear;
+}
+
+.gunjump {
+  animation: gunjump 0.5s linear;
+}
+
+.healthjump {
+  animation: healthjump 0.5s linear;
+}
+
+@keyframes jump {
+  0% {top: 30vh;}
+  50% {top: 0vh;}
+  100% {top: 30vh;}
+}
+
+@keyframes gunjump {
+  0% {top: 36vh;}
+  50% {top: 6vh;}
+  100% {top: 36vh;}
+}
+
+@keyframes healthjump {
+  0% {top: 25vh;}
+  50% {top: -5vh;}
+  100% {top: 25vh;}
+}
